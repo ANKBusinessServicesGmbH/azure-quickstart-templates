@@ -173,6 +173,16 @@
               "createOption": "Empty",
               "diskSizeGB": "512",
               "lun": 0
+            },
+            {
+              "name": "myvm-data-disk2",
+              "vhd": {
+                "Uri": "[concat('http://',variables('storageAccountName'),'.blob.core.windows.net/vhds/',parameters('dnsLabelPrefix'), 'disk2.vhd')]"
+              },
+              "caching": "None",
+              "createOption": "Empty",
+              "diskSizeGB": "256",
+              "lun": 1
             }
           ]
         },
