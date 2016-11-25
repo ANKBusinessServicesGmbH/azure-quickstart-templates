@@ -171,7 +171,7 @@
               },
               "caching": "None",
               "createOption": "Empty",
-              "diskSizeGB": "1000",
+              "diskSizeGB": "512",
               "lun": 0
             }
           ]
