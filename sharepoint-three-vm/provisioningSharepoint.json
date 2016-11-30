@@ -61,7 +61,7 @@
           "imageReference": {
             "publisher": "MicrosoftSharePoint",
             "offer": "MicrosoftSharePointServer",
-            "sku": "2013",
+            "sku": "2016",
             "version": "latest"
           },
           "osDisk": {
@@ -80,7 +80,7 @@
               "name": "[concat(parameters('spVMName'),'-data-disk1')]",
               "createOption": "empty",
               "caching": "None",
-              "diskSizeGB": 1000,
+              "diskSizeGB": 512,
               "lun": 0
             }
           ]

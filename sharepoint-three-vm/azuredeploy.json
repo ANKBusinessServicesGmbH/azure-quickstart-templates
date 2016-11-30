@@ -162,7 +162,7 @@
         "artifactsBaseUrl": "",
         "description": "URL to acquire other templates"
       },
-      "defaultValue": "https://raw.githubusercontent.com/Azure/azure-quickstart-templates/master/sharepoint-three-vm"
+      "defaultValue": "https://raw.githubusercontent.com/ANKBusinessServicesGmbH/azure-quickstart-templates/master/sharepoint-three-vm"
     },
     "spPublicIPNewOrExisting": {
       "type": "string",
@@ -249,16 +249,16 @@
     "sqlBEAddressPoolID": "[concat(variables('sqllbID'),'/backendAddressPools/',variables('LBBE'))]",
     "spIPConfigID": "[concat(variables('spNicId'),'/ipConfigurations/ipconfig1')]",
     "adDataDisk": "ADDataDisk",
-    "adDataDiskSize": 1000,
+    "adDataDiskSize": 512,
     "sqlDataDisk": "SQLDataDisk",
-    "sqlDataDiskSize": 1000,
+    "sqlDataDiskSize": 512,
     "sqlLogDisk": "SQLLogDisk",
-    "sqlLogDiskSize": 1000,
+    "sqlLogDiskSize": 256,
     "spDataDisk": "SPDataDisk",
-    "spDataDiskSize": 1000,
+    "spDataDiskSize": 512,
     "adpublicIPAddressName": "adpublicIP",
     "sqlpublicIPAddressName": "sqlpublicIP",
-    "spCentralAdminPort": 8080,
+    "spCentralAdminPort": 2016,
     "spAvailabilitySetName": "spAvailabiltySet",
     "sqlAvailabilitySetName": "sqlAvailabiltySet",
     "adAvailabilitySetName": "adAvailabiltySet",
